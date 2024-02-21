@@ -1,0 +1,11 @@
+---
+# vars file for install_tool
+
+ins_action: present  # present：安装，absent：卸载
+
+package_list:
+  - iotop
+  - traceroute
+
+
+
