@@ -1,0 +1,23 @@
+---
+# tasks file for install_tool
+
+#- name: Install specified tools in the role vars
+#  dnf: 
+#    name: '{{ package_list }}'
+#    state: present
+#    update_cache: true
+#  with_items: "{{ package_list }}" 
+#  when: ansible_os_family == "RedHat"
+
+- name: Install specified tools in the role vars 4 Ubuntu
+  #package:
+  apt:
+    name: '{{ package_list }}'
+    state: '{{ ins_action }}'
+  when: ansible_os_family == "Debian"
+
+- name: Install specified tools in the role vars 4 CentOS
+  yum:
+    name: '{{ package_list }}'
+    state: '{{ ins_action }}'
+  when: ansible_os_family == "RedHat"
