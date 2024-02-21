@@ -1,6 +1,0 @@
----
-# vars file for run_scr
-
-my_scr: ../scripts/myscript.sh
-dump_dir: /var/tmp
-

@@ -1,7 +1,0 @@
----
-# vars file for check_logs
-# Defaults
-
-log_file: /var/log/messages
-dump_dir: /tmp/
-
